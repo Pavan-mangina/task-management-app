@@ -1,0 +1,110 @@
+.list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.list-header h1 {
+  font-size: 2rem;
+  color: #1e293b;
+}
+
+.list-header p {
+  color: #64748b;
+}
+
+.add-task-btn {
+  background-color: #6366f1;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.add-task-btn:hover {
+  background-color: #4f46e5;
+}
+
+/* The Grid */
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Task Card */
+.task-item-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.task-content h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+.task-priority {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* Status Tags */
+.status-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #f1f5f9;
+}
+
+.status-tag.pending { background: #fff7ed; color: #c2410c; }
+.status-tag.in-progress { background: #eff6ff; color: #1d4ed8; }
+.status-tag.completed { background: #f0fdf4; color: #15803d; }
+
+/* Action Buttons */
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-link {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  background: #f8fafc;
+  transition: background 0.2s;
+}
+
+.action-link:hover {
+  background: #e2e8f0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  color: #94a3b8;
+  border: 2px dashed #e2e8f0;
+  border-radius: 12px;
+}

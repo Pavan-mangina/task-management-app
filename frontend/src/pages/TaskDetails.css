@@ -1,0 +1,108 @@
+.details-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.details-card {
+  background: white;
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Top Navigation inside Card */
+.details-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.back-link, .edit-link {
+  background: none;
+  border: none;
+  color: #6366f1;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Header & Title */
+.details-header h1 {
+  font-size: 2.2rem;
+  color: #1e293b;
+  margin-top: 10px;
+}
+
+/* Priority Badges */
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.priority-high { background: #fee2e2; color: #dc2626; }
+.priority-medium { background: #fef3c7; color: #d97706; }
+.priority-low { background: #dcfce7; color: #16a34a; }
+
+/* Content Styling */
+.details-body label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 25px;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.meta-info {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* Status Pills */
+.status-pill {
+  font-weight: 600;
+  color: #1e293b;
+}
+.status-pill.completed { color: #10b981; }
+.status-pill.in-progress { color: #3b82f6; }
+
+/* Footer & Delete Button */
+.details-footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-btn {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border: 1px solid #ffe4e6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #e11d48;
+  color: white;
+}

@@ -1,0 +1,86 @@
+.dashboard-wrapper {
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  color: #636e72;
+  font-size: 1.1rem;
+}
+
+/* The Grid Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Individual Navigation Cards */
+.menu-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-decoration: none; /* Removes link underline */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card h3 {
+  color: #2d3436;
+  margin: 15px 0 10px 0;
+  font-size: 1.4rem;
+}
+
+.menu-card p {
+  color: #b2bec3;
+  line-height: 1.5;
+}
+
+/* Icon Styling */
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-icon {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.view-icon {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
